@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hello world</h1>
+    <p> This is simple doc</p>
+    <a href="https://www.google.com"> <img src="https://image.flaticon.com/icons/svg/270/270014.svg" height="80" width="80" alt="Google"></a>
+    <br>
+    <table border="1" >
+        <thead>
+            <th> Roll no</th>
+            <th> Name</th>
+            <th> Branch</th>
+            <th> College</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td> Abhi</td>
+                <td>Cse</td>
+                <td>RCET</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td> jeet</td>
+                <td>Cse</td>
+                <td>RCET</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Anurag</td>
+                <td>Cse</td>
+                <td>RCET</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form method="GET">
+        <label>First Name</label>
+        <input type="text" name="firstName" required>
+        <br>
+        <label>Last Name</label>
+        <input type="text" name="lastName" required>
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <br>
+        <label>Password</label>
+        <input type="password" name="Password" required>
+        <br>
+        <label>Age</label>
+        <input type="number" name="Age" required max="80" min="13">
+        <br>
+        <label>Contact</label>
+        <input type="tel" name="Contact"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+        <br>
+        <label for="gender">Gender</label>
+        Male <input type="radio" name="Gender" value="Male" >
+        Female <input type="radio" name="gender" value="Female">
+        <br>
+        <label for="Courses"></label>
+        Python  <input type="checkbox" name="Course" value="Python" >
+        AIML  <input type="checkbox" name="Course" value="AIML" >
+        React  <input type="checkbox" name="Course" value="React" >
+        Angular  <input type="checkbox" name="Course" value="Angular" >
+        <br>
+        
+        <button type="submit"> Sign-up</button>
+        <br>
+        
+    </form>
+</body>
+</html>
