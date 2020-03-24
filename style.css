@@ -1,0 +1,62 @@
+h1,form{
+    color: blueviolet;
+    text-decoration: underline;
+    text-shadow: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-color{
+    color:green;
+    font-size: 30px;
+    font-family: cursive;
+    
+}
+#t-color{
+    color: rgb(241, 13, 13);
+}
+.div-color{
+    color:navy;
+    font-style: italic;
+}
+
+#first {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color:gray;
+    margin: 20px;
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    
+}
+#second{
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+#third{
+    margin: 10px;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+#buttons{
+    background-color: black;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Lobster', cursive; 
+    cursor: not-allowed;
+    border-radius: 20px;
+    
+}
+#buttons:hover{
+    background-color: blueviolet;
+    color: black;
+}
