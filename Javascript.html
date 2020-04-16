@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- <label for="name">Enter name</label>
+        <input type="text" name="fullName" id="fullName">
+        <button type="button" onclick="printName()">Submit</button>
+        <p>Hello</p>
+        <p id="res"></p> -->
+        <br>
+        <h2> Enter no 1</h2>
+        <input type="number" name="no1" id="no1">
+        <h2>Enter no 2</h2>
+        <input type=number" name="no2" id="no2">
+        <button id="add" type="button" onclick="cal(this)">Add</button>
+        <button id="sub" type="button" onclick="cal(this);">Subtract</button>
+        <button id="mul" type="button" onclick="cal(this);">Multiply</button>
+        <button id="mod" type="button" onclick="cal(this);">Mod</button>
+        <button id="clear" type="button" onclick="cal(this);">Clear</button>
+        <h3>Ans</h3>
+        <p id="ans"></p>
+    <!-- <script>
+        var a=10;
+        var b=20;
+        var result = (a==b);
+        document.getElementById("res").innerHTML=result;
+    //     document.writeln("a==b "+ result);
+    //     document.writeln('<br>');
+    //     result=(a!=b);
+    //     document.writeln("a!=b "+ result);
+    // </script> -->
+    <!-- <script>
+        function printName() {
+            var name= document.getElementById("fullName").value;
+            // debugger;
+            console.log(name);
+            document.getElementById("res").innerHTML=name;
+        }
+    </script> -->
+    <script>
+        function cal(ele) {
+            var a=parseInt(document.getElementById("no1").value);
+            var b= parseInt(document.getElementById("no2").value);
+            var op=ele.id;
+            // debugger
+            if (op=="add") {
+                document.getElementById("ans").innerHTML=(a+b);
+            } 
+            if(op=="sub"){
+                document.getElementById("ans").innerHTML=(a-b);
+            }
+            if(op=="mul"){
+                document.getElementById("ans").innerHTML=(a*b);
+            }
+            if(op=="mod"){
+                document.getElementById("ans").innerHTML=(a/b);
+            }
+            if(op=="clear"){
+                document.getElementById("no1").value='';
+                document.getElementById("no2").value='';
+            }
+
+        }
+    </script>
+    <!-- <script>
+        let array=[];
+        array.push(20);
+        array.push(10);
+        array.push(190);
+        array.push(20);
+        array.push(90);
+        array.push(40);
+        array.push(60);
+        for (var i=0; i<array.length;i++) {
+            console.log(array[i]);
+        }
+        console.log("POP ");
+        console.log(array.pop());
+        console.log(array.pop());
+        console.log(array.pop());
+        console.log(array.pop());
+        console.log(array.pop());
+        console.log(array.pop());
+        console.log(array.pop());
+        console.log(array.pop());
+
+    </script> -->
+    <script>
+        let array="abhi";
+        let rev="";
+
+        // for (let index = 0; index < 10; index++) {
+        //     array[index]=index;
+            
+        // } 
+        for (let index = 0; index< array.length; index++) {
+            rev=rev + array.slice(index-1);
+            
+        } 
+        console.log(rev);
+        
+    </script>
+
+</body>
+</html>
